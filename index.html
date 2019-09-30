@@ -42,6 +42,7 @@ li a:hover:not(.active) {
   top: 0;
   width: 100%;
   display: block;
+  padding: 10px 16px;
 }
 
 .banner_img {
@@ -78,11 +79,11 @@ header{
 
 <body>
 
-<div class="banner" id="myHeader">>
+<div class="banner" id="myHeader">
 	<img class= "banner_img" src="/images/banner.png" alt="Banner">
 </div>
 
-
+<div class="menu" id="menu">
 <ul>
   <li><a class="active" href="#home">Home</a></li>
   <li><a href="#install">Install</a></li>
@@ -92,6 +93,8 @@ header{
   <li><a href="#voting">Voting</a></li>
   <li><a href="#download">Download</a></li>
 </ul>
+</div>
+
 
 <div style="margin-left:28%;padding:1px 16px;height:1000px;">
 
@@ -172,14 +175,11 @@ e-mail: maarten.van.der.vorst@esa.int
 window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+var menu = document.getElementById("menu");
+
 
 function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
+  menu.top = header.height + 20;
 }
 </script>
 
