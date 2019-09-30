@@ -10,13 +10,51 @@ body {
   border: 1px solid grey;
   padding: 30px;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
 </style>
 </head>
 <body>
 
 <div class="w3-content">
- <img class="mySlides" src="/images/banner.png" alt="custom_html_banner1" style="width:100%">
+ <img class="mySlides" src="/images/banner.png" alt="custom_html_banner1" style="width:100% position: fixed">
 </div>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div style="margin-left:28%;padding:1px 16px;height:1000px;">
 
 <h1>Antenna Workshop</h1>
 <p>The Antenna & Sub-Millimetre Waves Section of the Radio Frequency Payloads & Technology Division organises the 40th ESA Antenna Workshop from 8-10 October 2019. This workshop will provide an overview of recent and on-going antenna and microwave instrument developments with particular focus on items installed on terrestrial and small-space platforms, including CubeSats/PocketQube, High-Altitude Platforms and Unmanned Aerial Vehicles.
@@ -26,6 +64,7 @@ May 2019
 July 2019 September 2019.</p>
 
 
+<h3>id="#account">Account</h3>
 <h3>INSTALL APP (iOS/ANDROID)</h3>
 <p>To install the app just go to the App Store or the Google Play Store and search for Antenna Workshop.</p>
 <div class="row">
