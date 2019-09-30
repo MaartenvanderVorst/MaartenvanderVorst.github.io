@@ -67,7 +67,8 @@ header{
 </head>
 
 
-<body>
+<body onresize="myFunction()">
+
 
 <div class="banner" id="myHeader">
 	<img class= "banner_img" src="/images/banner.png" alt="Banner">
@@ -161,16 +162,15 @@ e-mail: maarten.van.der.vorst@esa.int
 </section>
 
 
+
 <script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var menu = document.getElementById("menu");
-
-
 function myFunction() {
-  
-  document.getElementById("menu").style.top = "200px";
+  var w = window.outerWidth;
+  var h = window.outerHeight;
+  var txt = "Window size: width=" + w + ", height=" + h;
+  document.getElementById("home").innerHTML = txt;
+  var h1 = document.getElementById("banner").height;
+  document.body.padding-top = h1+100;
 }
 </script>
 
