@@ -49,6 +49,20 @@ li a:hover:not(.active) {
   display: block;
 }
 
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
 body{
     padding-top:250px;
     margin:0;
@@ -64,7 +78,7 @@ header{
 
 <body>
 
-<div class="banner">
+<div class="banner" id="myHeader">>
 	<img class= "banner_img" src="/images/banner.png" alt="Banner">
 </div>
 
@@ -154,7 +168,20 @@ e-mail: maarten.van.der.vorst@esa.int
 </section>
 
 
+<script>
+window.onscroll = function() {myFunction()};
 
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 
 </body>
 </html>
