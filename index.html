@@ -13,7 +13,8 @@ ul {
   padding: 0;
   width: 25%;
   background-color: #f1f1f1;
-  top: 250px;
+  position: fixed;
+  top: 150px;
   height: 100%;
 }
 
@@ -51,16 +52,6 @@ li a:hover:not(.active) {
 
 .content {
   padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 102px;
 }
 
 body{
@@ -179,7 +170,7 @@ var menu = document.getElementById("menu");
 
 function myFunction() {
   
-  document.getElementById("menu").style.top = "500px";
+  document.getElementById("menu").style.top = "200px";
 }
 </script>
 
