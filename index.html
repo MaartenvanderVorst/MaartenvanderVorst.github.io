@@ -7,17 +7,6 @@ p {
   padding: 0px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 25%;
-  background-color: #f1f1f1;
-  position: fixed;
-  top: 260px;
-  height: 100%;
-}
-
 li a {
   display: block;
   color: #000;
@@ -79,20 +68,7 @@ header{
 <div class="center"><img src="/images/banner.png" alt="Banner"></div>
 
 
-<div class="menu" id="menu">
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#install">Install</a></li>
-  <li><a href="#account">Account</a></li>
-  <li><a href="#info">Info</a></li>
-  <li><a href="#programme">Programme</a></li>
-  <li><a href="#voting">Voting</a></li>
-  <li><a href="#download">Download</a></li>
-</ul>
-</div>
-
-
-<div style="margin-left:28%;padding:1px 16px;height:1000px;">
+<div style="margin-left:5%;padding:1px 16px;height:1000px;">
 
  
 <section class="bottom-slide" id="home">
@@ -162,22 +138,13 @@ July 2019 September 2019.</p>
 <h3>IN CASE OF PROBLEMS</h3>
 
 Contact:
-Maarten van der Vorst
-e-mail: maarten.van.der.vorst@esa.int
+<ul>
+  <li>Maarten van der Vorst</li>
+  <li>e-mail: maarten.van.der.vorst@esa.int</li>
+</ul>
+
 </section>
 
-
-
-<script>
-function myFunction() {
-  var w = window.outerWidth;
-  var h = window.outerHeight;
-  var txt = "Window size: width=" + w + ", height=" + h;
-  document.getElementById("home").innerHTML = txt;
-  var h1 = document.getElementById("banner").height;
-  document.body.padding-top = h1+100;
-}
-</script>
 
 </body>
 </html>
